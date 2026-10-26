@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Москва — Баку · Новогодняя сказка · 6 декабря 2026</title>
+<meta name="theme-color" content="#2f0201">
+<style>
+@font-face{font-family:LoraT;src:url(fonts/lora.woff) format("woff");font-weight:400 700}@font-face{font-family:LoraI;src:url(fonts/lora-italic.woff) format("woff");font-style:italic;font-weight:400 700}@font-face{font-family:NotoD;src:url(fonts/noto-display.woff) format("woff");font-weight:600}
+:root{--bg:#2f0201;--gold:#e8cb96;--gold2:#b98c4f;--cream:#f4e8d2;--card:rgba(255,235,200,.05);--line:rgba(232,203,150,.45);
+--serif:NotoD,Georgia,serif;--text:LoraT,Georgia,serif;--script:LoraI,Georgia,serif;color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px);height:auto}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{background:radial-gradient(120% 60% at 50% 20%,#4a0807 0%,var(--bg) 70%) fixed,var(--bg);color:var(--cream);font:400 18px/1.55 var(--text);position:relative;overflow-x:hidden;min-height:100%}
+body::before{content:"";position:fixed;inset:calc(10px + env(safe-area-inset-top,0px)) 10px calc(10px + env(safe-area-inset-bottom,0px));border:1px solid var(--line);outline:1px solid rgba(232,203,150,.25);outline-offset:5px;pointer-events:none;z-index:5}
+.corner{position:absolute;pointer-events:none;z-index:1;width:min(62vw,330px)}
+.tl{top:0;left:0}.br{right:0;bottom:0}
+main{position:relative;z-index:2;max-width:640px;margin:0 auto;padding:0 26px}
+section{padding:54px 0 10px;text-align:center}
+.gold{background:linear-gradient(180deg,#f7e3b4 0%,#e0bd82 55%,#b98c4f 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cap{font:600 15px var(--text);letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
+h1{font:600 clamp(54px,17vw,92px)/1.08 var(--serif);letter-spacing:.03em;margin:18px 0 12px}h1 span{display:block;padding-bottom:.06em}h1 .dash{font-size:.42em;line-height:1;margin:.1em 0 .2em;letter-spacing:0}
+h2{font:600 clamp(32px,9vw,50px)/1.15 var(--serif);letter-spacing:.03em;margin-bottom:8px}
+.script{font:italic 500 clamp(34px,9.6vw,52px)/1.25 var(--script);color:var(--gold);word-spacing:.1em;padding:2px 0}
+.orn{display:flex;align-items:center;gap:14px;justify-content:center;margin:20px auto;max-width:360px;color:var(--gold)}
+.orn::before,.orn::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold2),transparent)}
+.orn i{font-style:normal;font-size:20px}
+.hero{padding-top:min(36vw,170px)}
+.date{display:inline-block;margin:10px 0 6px;padding:10px 30px;border:1px solid var(--gold2);border-radius:60px;font:600 clamp(22px,6.4vw,32px) var(--serif);letter-spacing:.06em;color:var(--gold);background:rgba(232,203,150,.07)}
+.place{font-size:20px;margin-top:8px}.sub{font-style:italic;color:#d9c8a8;margin-top:4px}
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:30px auto 0;max-width:460px}
+.count div{border:1px solid var(--line);border-radius:14px;padding:12px 4px;background:var(--card)}
+.count b{display:block;font:600 30px var(--serif);color:var(--gold)}.count span{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#cdb98f}
+.btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+.btn{display:inline-block;padding:13px 26px;border-radius:40px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;font:600 16px var(--text);letter-spacing:.16em;text-transform:uppercase}
+.btn.fill{background:linear-gradient(180deg,#efd5a0,#c39a5c);color:#2f0201;border-color:transparent}
+.grid{display:grid;gap:16px;margin-top:26px}
+.card{border:1px solid var(--line);border-radius:20px;padding:22px 20px;background:var(--card)}
+.card h3{font:600 15px var(--text);letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.card p{font-size:20px;line-height:1.35}
+.list{list-style:none;padding:0;margin-top:24px;display:grid;gap:12px;font-size:20px}
+.list li::before{content:"◆";color:var(--gold2);font-size:12px;margin-right:12px;vertical-align:3px}
+details{border:1px solid var(--line);border-radius:18px;background:var(--card);margin-top:14px;text-align:left;padding:4px 20px}
+summary{cursor:pointer;list-style:none;padding:16px 0;font:600 16px var(--text);letter-spacing:.26em;text-transform:uppercase;color:var(--gold);display:flex;justify-content:space-between}
+summary::after{content:"+";font-size:24px;line-height:1}details[open] summary::after{content:"–"}
+summary::-webkit-details-marker{display:none}
+details h4{font:600 14px var(--text);letter-spacing:.24em;text-transform:uppercase;color:var(--gold2);margin:8px 0 6px}
+details p{font-size:17px;margin-bottom:10px;color:#eadfc8}
+.look{display:flex;justify-content:center;align-items:center;gap:6px;margin:30px -8px 0}
+.look img{width:31%;max-width:190px;height:auto}
+.sw{display:grid;gap:16px;justify-items:center}
+.sw div{width:78px;text-align:center;font:600 12px/1.2 var(--text);letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+.sw i{display:block;width:70px;height:70px;border-radius:50%;margin:0 auto 6px;border:2px solid var(--gold2)}
+.k{background:#0c0b0b}.w{background:#f6efe0}.p{background:radial-gradient(circle,#111 0 22%,transparent 24%) 0 0/17px 17px,radial-gradient(circle,#111 0 22%,transparent 24%) 8.5px 8.5px/17px 17px,#f6efe0}
+.say{font:400 clamp(26px,7vw,36px)/1.25 var(--script);color:var(--gold);margin-top:26px}
+.prices{display:grid;gap:16px;margin-top:26px}
+.price{border-radius:24px;padding:22px 16px;border:1px solid var(--gold2);background:var(--card)}
+.price.vip{background:linear-gradient(180deg,#efd5a0,#c39a5c);color:#2f0201;border-color:transparent}
+.price em{display:block;font:600 16px var(--text);font-style:normal;letter-spacing:.34em;text-transform:uppercase}
+.price b{display:block;font:600 clamp(40px,12vw,58px)/1.2 var(--serif)}
+.price:not(.vip) b{color:var(--gold)}
+footer{padding:60px 0 min(46vw,230px);text-align:center;position:relative;z-index:2}
+</style></head><body>
+<img class="corner tl" alt="" src="img/0.webp">
+<main>
+<section class="hero">
+ <div class="cap">Приглашаем вас</div>
+ <h1 class="gold"><span>МОСКВА</span><span class="dash">—</span><span>БАКУ</span></h1>
+ <div class="script">Новогодняя сказка</div>
+ <div class="orn"><i>❄</i></div>
+ <div class="date">6 ДЕКАБРЯ 2026</div>
+ <p class="place">Триумф Event Hall · Москва</p>
+ <p class="sub">Два города — один праздник!</p>
+ <div class="count" aria-label="Сколько осталось до праздника"><div><b id="d">—</b><span>дней</span></div><div><b id="h">—</b><span>часов</span></div><div><b id="m">—</b><span>минут</span></div><div><b id="s">—</b><span>секунд</span></div></div>
+ <div class="btns"><a class="btn fill" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%20%E2%80%94%20%D0%91%D0%B0%D0%BA%D1%83.%20%D0%9D%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%D0%B4%D0%BD%D1%8F%D1%8F%20%D1%81%D0%BA%D0%B0%D0%B7%D0%BA%D0%B0&dates=20261206T150000Z/20261206T190000Z&location=%D0%A2%D1%80%D0%B8%D1%83%D0%BC%D1%84%20Event%20Hall%2C%20%D1%83%D0%BB.%20%D0%9D%D0%B5%D0%B2%D0%B5%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C%2015%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0" target="_blank" rel="noopener">В календарь</a><a class="btn" href="#details">Детали ↓</a></div>
+</section>
+
+<section id="details">
+ <h2 class="gold">Детали вечера</h2><div class="orn"><i>❄</i></div>
+ <div class="grid">
+  <div class="card"><h3>Когда</h3><p>6 декабря 2026<br>Сбор гостей — 17:00<br>Начало — 18:00</p></div>
+  <div class="card"><h3>Где</h3><p>Триумф Event Hall<br>Москва, ул. Неверовского, 15</p><div class="btns" style="margin-top:16px"><a class="btn" href="https://yandex.ru/maps/?text=%D0%A2%D1%80%D0%B8%D1%83%D0%BC%D1%84%20Event%20Hall%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%20%D0%9D%D0%B5%D0%B2%D0%B5%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2015" target="_blank" rel="noopener">Открыть на карте ↗</a></div></div>
+ </div>
+</section>
+
+<section>
+ <h2 class="gold">Программа</h2><div class="orn"><i>❄</i></div>
+ <ul class="list"><li>Живая музыка</li><li>Танцы и дискотека</li><li>Театрализованная программа</li><li>Ансамбли «Изумруд», «Карабах», «Веснушки»</li><li>Дед Мороз и Снегурочка</li><li>Фотограф, видеограф, фотозона</li><li>Большой розыгрыш подарков</li></ul>
+</section>
+
+<section>
+ <h2 class="gold">Меню</h2><div class="script" style="font-size:34px">праздничный ужин</div>
+ <details><summary>Закуски и салаты</summary><h4>Холодные закуски</h4><p>Свежая зелень и овощное ассорти · европейские и кавказские сыры · икра из баклажанов · рулетики из баклажанов и цукини · маринованные грибочки с квашеной капустой</p><h4>Салаты</h4><p>«Цезарь» с курицей · «Триумф» · «Капрезе»</p><h4>Горячие закуски</h4><p>Блинчики с мясом · хачапури на мангале · кутабы с мясом и зеленью</p></details>
+ <details><summary>Горячее и сладости</summary><h4>Банкетное блюдо</h4><p>Цыплёнок табака</p><h4>Горячие блюда</h4><p>Сёмга на углях с картофельным люля-кебабом · ассорти шашлыков с овощами на мангале · шах-плов с гара</p><h4>Фрукты и сладости</h4><p>Ягодное ассорти · сезонные фрукты · конфеты · сухофрукты и орехи · финики · праздничный торт</p><h4>Хлебная корзина</h4><p>Пшеничные лепёшки · чёрный хлеб · лаваш</p></details>
+ <details><summary>Напитки без ограничений</summary><p style="margin-top:6px">Домашний компот · кока-кола · тархун · дюшес · вода с газом и без газа · чай из самовара</p></details>
+</section>
+
+<section>
+ <h2 class="gold">Дресс-код</h2><div class="script">Новогодняя элегантность</div>
+ <p class="cap" style="margin-top:22px;font-size:14px;line-height:1.8">Пусть ваш образ<br>станет частью праздника!</p>
+ <div class="look"><img alt="" src="img/1.webp"><div class="sw"><div><i class="k"></i>Чёрные наряды</div><div><i class="w"></i>Белые наряды</div><div><i class="p"></i>Чёрно-белый горох</div></div><img alt="" src="img/2.webp"></div>
+ <p class="say">Стиль, элегантность и хорошее настроение — наш дресс-код!</p>
+</section>
+
+<section>
+ <h2 class="gold">Билеты</h2><div class="orn"><i>❄</i></div>
+ <div class="prices"><div class="price"><em>Стандарт</em><b>8 500 ₽</b></div><div class="price vip"><em>VIP-стол</em><b>9 500 ₽</b></div></div>
+ <p style="margin-top:20px;font-size:18px;color:#eadfc8">Ужин и напитки без ограничений · вся программа вечера</p>
+</section>
+</main>
+<footer><main><div class="script">Встречаем Новый год вместе!</div><div class="orn"><i>❄</i></div><div class="cap" style="font-size:13px">Москва — Баку · 06.12.2026</div></main></footer>
+<img class="corner br" alt="" src="img/3.webp">
+<script>
+(function(){var T=new Date("2026-12-06T18:00:00+03:00").getTime();function u(){var l=Math.max(0,T-Date.now()),s=Math.floor(l/1000);
+var v={d:Math.floor(s/86400),h:Math.floor(s%86400/3600),m:Math.floor(s%3600/60),s:s%60};for(var k in v){var e=document.getElementById(k);if(e)e.textContent=String(v[k])}}
+u();setInterval(u,1000)})();
+</script>
+</body></html>
